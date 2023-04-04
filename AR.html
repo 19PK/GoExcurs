@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Styels.css">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.8/aframe/build/aframe-ar.js"></script>
+    <title>GoExcurs - Экран экскурсий</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <h1>GoExcurs</h1>
+      <nav>
+        <ul>
+          <li><a href="GoExcurs.html">Главная</a></li>
+          <li><a href="Экран экскурсий.html">Экскурсии</a></li>
+          <li><a href="AR.html">AR-режим</a></li>
+          <li><a href="#">Настройки и Справка</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>AR-режим</h2>
+      <a-scene embedded arjs>
+        <a-marker preset="hiro">
+          <a-box position='0 0.5 0' material='color: red;'></a-box>
+        </a-marker>
+        <a-entity camera></a-entity>
+      </a-scene>
+    </main>
+    <footer>
+      <p>© 2023 GoExcurs</p>
+    </footer>
+  </body>
+</html>
